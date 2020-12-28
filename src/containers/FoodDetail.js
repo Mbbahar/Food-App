@@ -56,7 +56,7 @@ function FoodDetail({navigation, route}) {
               alignItems: 'center',
               justifyContent: 'space-around',
             }}>
-            <Text style={food_detail.title}>Hazırlanışı</Text>
+            <Text style={food_detail.title}>Instructions</Text>
             <Icon name="logo-youtube" onPress={() => setShowWebView(true)} color="red" size={40} />
           </View>
     
