@@ -51,7 +51,6 @@ const category_card = StyleSheet.create({
   image: {
     height: device_size.height / 3,
     width: device_size.width * 0.7,
-
   },
   footer: {
     flexDirection: 'row',
@@ -83,7 +82,7 @@ const meal_card = StyleSheet.create({
   },
   image: {
     height: Dimensions.get('window').height / 3,
-    borderRadius: 10
+    borderRadius: 10,
   },
   text: {
     marginVertical: 5,
@@ -94,4 +93,24 @@ const meal_card = StyleSheet.create({
   },
 });
 
-export {vertical_tab_bar, category_card, meal_card};
+const search_bar = StyleSheet.create({
+  container: {
+    margin: 10,
+    borderRadius: 10,
+    flexDirection: 'row',
+  },
+  iconContainer: {
+    padding: 5,
+    borderBottomWidth: 1,
+    borderColor: '#353233',
+    marginRight: 10,
+  },
+  inputContainer: {
+    borderColor: '#353233',
+    borderBottomWidth: 1,
+    flex: 1,
+    marginLeft: 10,
+  },
+});
+
+export {vertical_tab_bar, category_card, meal_card, search_bar};

@@ -7,7 +7,7 @@ import { WebView } from 'react-native-webview';
 
 const api_url = 'https://www.themealdb.com/api/json/v1/1/search.php';
 
-function FoodDetail({route}) {
+function FoodDetail({navigation, route}) {
   const {meal} = route.params;
   const [mealDetail, setMealDetail] = useState({});
   const [showWebView, setShowWebView] = useState(false);
@@ -35,7 +35,16 @@ function FoodDetail({route}) {
   }else {
     return (
         <ScrollView>
+          <View style={food_detail.header_component}>
+          <Icon
+            name="arrow-undo-circle"
+            color="#7BA05B"
+            size={40}
+            onPress={() => navigation.goBack()}
+          />
           <Text style={food_detail.title}>{mealDetail.strMeal}</Text>
+        </View>
+          
           <Image
             resizeMode="contain"
             source={{uri: mealDetail.strMealThumb}}
