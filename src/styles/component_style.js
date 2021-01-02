@@ -31,38 +31,30 @@ const vertical_tab_bar = StyleSheet.create({
 
 const category_card = StyleSheet.create({
   container: {
-    justifyContent: 'space-around',
-    alignSelf: 'center',
-    alignItems: 'center',
-
-    height: device_size.height / 2,
-
-    backgroundColor: 'white',
-    padding: 2,
-    margin: 5,
-    borderRadius: 10,
     shadowOpacity: 0.3,
     shadowOffset: {
       width: -5,
       height: 5,
     },
     elevation: 20,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    margin: 10,
   },
   image: {
     height: device_size.height / 3,
-    width: device_size.width * 0.7,
+    borderRadius: 10,
+    //borderTopRightRadius: 10,
   },
   footer: {
     flexDirection: 'row',
+    justifyContent:'space-between',
+    marginHorizontal: 5
   },
   title: {
-    margin: 10,
     fontSize: 30,
     fontWeight: 'bold',
     color: '#353233',
-  },
-  icon: {
-    alignSelf: 'flex-end',
   },
 });
 
@@ -90,6 +82,7 @@ const meal_card = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     color: '#353233',
+    
   },
 });
 

@@ -23,6 +23,19 @@ const main = StyleSheet.create({
     alignItems: 'center',
     marginLeft: 10,
   },
+  header_title: {
+    fontSize:20,
+    fontWeight: '700'
+  },
+  header_text: {
+    fontSize: 15,
+    //textAlign: 'center'
+  },
+  image: {
+    height: device_size.height / 5,
+    width: device_size.width /5,
+    borderRadius: 500
+  }
 });
 
 const food_detail = StyleSheet.create({
@@ -40,7 +53,8 @@ const food_detail = StyleSheet.create({
   instructions: {
     fontSize: 15,
     fontWeight: '600',
-    margin: 20,
+    marginHorizontal: 30,
+    //textAlign: 'center',
   },
   header_component: {
     flexDirection: 'row',
