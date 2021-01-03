@@ -31,8 +31,8 @@
      <td>Meal Detail Screen</td>
   </tr>
   <tr>
-    <td><img src="screenshots/category_dark.png" width=270 height=480></td>
-    <td><img src="screenshots/meal_dark.png" width=270 height=480></td>
-     <td><img src="screenshots/detail_dark.png" width=270 height=480></td>
+    <td><img src="screenshots/category_dark.jpg" width=270 height=480></td>
+    <td><img src="screenshots/meal_dark.jpg" width=270 height=480></td>
+     <td><img src="screenshots/detail_dark.jpg" width=270 height=480></td>
   </tr>
  </table>
