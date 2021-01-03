@@ -18,10 +18,8 @@ function FoodDetail({navigation, route}) {
         s: meal.strMeal,
       },
     });
-    var str = JSON.stringify(response.data.meals);
-    var final = str.replace(/\[|\]/g, '');
-    console.log(JSON.parse(final));
-    setMealDetail(JSON.parse(final));
+    console.log(response.data.meals[0]);
+    setMealDetail(response.data.meals[0]);
   };
 
   useEffect(() => {
