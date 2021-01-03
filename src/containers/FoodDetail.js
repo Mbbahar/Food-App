@@ -12,6 +12,8 @@ function FoodDetail({navigation, route}) {
   const [mealDetail, setMealDetail] = useState({});
   const [showWebView, setShowWebView] = useState(false);
 
+  const [integredientList, setintegredientList] = useState([]);
+
   async function getMeals() {
     response = await axios.get(api_url, {
       params: {
@@ -20,7 +22,7 @@ function FoodDetail({navigation, route}) {
     });
     console.log(response.data.meals[0]);
     setMealDetail(response.data.meals[0]);
-  };
+  }
 
   useEffect(() => {
     getMeals();
@@ -61,10 +63,9 @@ function FoodDetail({navigation, route}) {
           />
         </View>
 
-          <Text style={food_detail.instructions}>
-            {mealDetail.strInstructions}
-          </Text>
-        
+        <Text style={food_detail.instructions}>
+          {mealDetail.strInstructions}
+        </Text>
       </ScrollView>
     );
   }

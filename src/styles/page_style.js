@@ -29,7 +29,6 @@ const main = StyleSheet.create({
   },
   header_text: {
     fontSize: 15,
-    //textAlign: 'center'
   },
   image: {
     height: device_size.height / 5,
@@ -54,7 +53,6 @@ const food_detail = StyleSheet.create({
     fontSize: 15,
     fontWeight: '600',
     marginHorizontal: 30,
-    //textAlign: 'center',
   },
   header_component: {
     flexDirection: 'row',

@@ -16,11 +16,11 @@ const vertical_tab_bar = StyleSheet.create({
   },
   text: {
     color: '#fff',
-    fontSize: 25,
+    fontSize: 20,
     transform: [{rotate: '-90deg'}],
   },
   circle: {
-    width: 40,
+    width: 30,
     height: 75,
     borderTopLeftRadius: 200 / 2,
     borderBottomLeftRadius: 200 / 2,
