@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity} from 'react-native';
 import {meal_card} from '../styles/component_style';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 function MealCard({meal, onCard}) {
   return (

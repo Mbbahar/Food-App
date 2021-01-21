@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text, View, TouchableHighlight} from 'react-native';
-
 import {vertical_tab_bar} from '../styles/component_style';
 
 function VerticalTabBar({routeHome, routeProfile, page}) {

@@ -24,17 +24,17 @@ const main = StyleSheet.create({
     marginLeft: 10,
   },
   header_title: {
-    fontSize:20,
-    fontWeight: '700'
+    fontSize: 20,
+    fontWeight: '700',
   },
   header_text: {
     fontSize: 15,
   },
   image: {
     height: device_size.height / 5,
-    width: device_size.width /5,
-    borderRadius: 500
-  }
+    width: device_size.width / 5,
+    borderRadius: 500,
+  },
 });
 
 const food_detail = StyleSheet.create({

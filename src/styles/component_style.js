@@ -44,12 +44,11 @@ const category_card = StyleSheet.create({
   image: {
     height: device_size.height / 3,
     borderRadius: 10,
-    //borderTopRightRadius: 10,
   },
   footer: {
     flexDirection: 'row',
-    justifyContent:'space-between',
-    marginHorizontal: 5
+    justifyContent: 'space-between',
+    marginHorizontal: 5,
   },
   title: {
     fontSize: 30,
@@ -82,7 +81,6 @@ const meal_card = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     color: '#353233',
-    
   },
 });
 

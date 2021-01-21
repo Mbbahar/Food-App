@@ -34,22 +34,26 @@ function CategoryList(props) {
   );
 
   const ListHeaderComponent = () => {
-   return (
-    <View style={{flexDirection:'row',alignItems:'center', justifyContent:'space-around'}} >
-    <View>
-    <Text style={main.header_title}>Most Popular Recipes</Text>
-    <Text style={main.header_text}>{randomMeal.strMeal}</Text>
-    </View>
-    
-    <Image
-      resizeMode="contain"
-      source={{uri: randomMeal.strMealThumb}}
-      style={main.image}
-    />
-    
-    </View> 
-   )
-  }
+    return (
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-around',
+        }}>
+        <View>
+          <Text style={main.header_title}>Most Popular Recipes</Text>
+          <Text style={main.header_text}>{randomMeal.strMeal}</Text>
+        </View>
+
+        <Image
+          resizeMode="contain"
+          source={{uri: randomMeal.strMealThumb}}
+          style={main.image}
+        />
+      </View>
+    );
+  };
 
   useEffect(() => {
     getCategory();
@@ -63,10 +67,9 @@ function CategoryList(props) {
         routeHome={() => props.navigation.navigate('CategoryList')}
       />
       <View style={{flex: 1}}>
-        
         <FlatList
           // horizontal
-          ListHeaderComponent= {ListHeaderComponent}
+          ListHeaderComponent={ListHeaderComponent}
           keyExtractor={(item) => item.idCategory}
           data={categoryList}
           renderItem={renderItem}
