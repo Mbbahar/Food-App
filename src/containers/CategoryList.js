@@ -37,7 +37,7 @@ function CategoryList(props) {
    return (
     <View style={{flexDirection:'row',alignItems:'center', justifyContent:'space-around'}} >
     <View>
-    <Text style={main.header_title}>Most Popüler Recipes</Text>
+    <Text style={main.header_title}>Most Popular Recipes</Text>
     <Text style={main.header_text}>{randomMeal.strMeal}</Text>
     </View>
     
